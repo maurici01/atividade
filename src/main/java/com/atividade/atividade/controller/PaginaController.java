@@ -8,11 +8,11 @@ public class PaginaController {
 	
 	@GetMapping("/projeto")
 	public String projeto() {
-		return "home";
+		return "projeto";
 	}
 	
 	@GetMapping("/projeto/home")
-	public String projetoHome() {
+	public String home() {
 		return "home";
 	}
 }

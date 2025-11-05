@@ -18,12 +18,12 @@ public class Config implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		Usuario u1 = new Usuario(null, "joao", "@gmail", "71999");
-		Usuario u2 = new Usuario(null, "Ana", "@gmail", "718889");
-		Usuario u3 = new Usuario(null, "Maria", "@gmail", "717779");
-		Usuario u4 = new Usuario(null, "Bianca", "@gmail", "715559");
+		Usuario u1 = new Usuario(null, "mauricio", "mauricio@gmail", "71999");
+		Usuario u2 = new Usuario(null, "Ana", "ana@gmail", "718889");
+		Usuario u3 = new Usuario(null, "Maria", "maria@gmail", "717779");
+		Usuario u4 = new Usuario(null, "Bianca", "bianca@gmail", "715559");
 		
-		usuarioRepository.saveAll(Arrays.asList(u1));
+		usuarioRepository.saveAll(Arrays.asList(u1, u2, u3, u4));
 		
 	}
 
